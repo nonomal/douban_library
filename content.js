@@ -57,7 +57,7 @@ function initDivElement(selectedProvinceName, book) {
   div.style.margin = "20px auto";
 
   const componentTitle = document.createElement("h2");
-  componentTitle.innerHTML = `<span>${selectedProvinceName}图书馆&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·</span>`;
+  componentTitle.innerHTML = `<span>${selectedProvinceName}&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·</span>`;
   componentTitle.style.fontSize = "15px";
   div.appendChild(componentTitle);
 

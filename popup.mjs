@@ -31,7 +31,7 @@ function getProvinceStatusAndRender(provinceList) {
 function renderProvinceListItem(selectedProvinceName, provinceList) {
     const item = document.createElement("div");
     item.innerHTML = `
-        <p><i class="far fa-lg fa-check-circle text-green-500"  title="已选择"></i>   ${selectedProvinceName}图书馆</p>
+        <p><i class="far fa-lg fa-check-circle text-green-500"  title="已选择"></i>   ${selectedProvinceName}</p>
     `;
     provinceList.appendChild(item);
 }
