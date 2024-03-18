@@ -17,7 +17,7 @@
   ],
   "description": "自动查询指定图书馆图书信息，让用户更轻松地找到所需的图书馆资源。",
   "background": {
-    "service_worker": "background.js"
+    "scripts": ["background.js"]
   },
   "icons": {
     "128": "img/book_128.png",
@@ -27,5 +27,10 @@
   "options_ui": {
     "page": "options.html",
     "open_in_tab": true
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{74dd51b9-9aac-43c0-a4b9-63889b356957}"
+    }
   }
 }
