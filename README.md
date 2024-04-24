@@ -18,7 +18,7 @@
 ### 插件功能截图
 ![](https://github.com/wyj0605/douban_library/blob/main/img/Snipaste_2024-03-14_12-26-49.png?raw=true)
 
-![](https://github.com/wyj0605/douban_library/blob/main/img/Snipaste_2024-04-18_13-48-40.png?raw=true)
+![](https://github.com/wyj0605/douban_library/blob/main/img/2024-4-24.png?raw=true)
 
 
 ### 目前支持的图书馆：
