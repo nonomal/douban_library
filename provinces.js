@@ -56,20 +56,23 @@ const provinces = [
   { code: "51", name: "呼和浩特市" },
   { code: "54", name: "南宁市" },
   { code: "74", name: "宁夏回族自治区" },
-  { code: "72", name: "黄石市" },
   { code: "77", name: "北京首都" },
   { code: "78", name: "河南省" },
-
-  // { code: "39", name: "福泉市" },
+  { code: "79", name: "南京市" },
+  { code: "31", name: "中山市" },
+  { code: "39", name: "福泉市" },
+  { code: "25", name: "绍兴市" },
+//{ code: "72", name: "黄石市" },
+  // 
   // { code: "40", name: "来宾市" },
   // { code: "49", name: "镇江市" },
   // { code: "30", name: "晋城市" },
-  // { code: "31", name: "中山市" },
+  // 
   // { code: "33", name: "莆田市" },
   // { code: "34", name: "江阴市" },
   // { code: "23", name: "铁岭市" },
   // { code: "24", name: "鄂州市" },
-  // { code: "25", name: "绍兴市" },
+  // 
   // { code: "26", name: "百色市" },
   // { code: "21", name: "鞍山市" },
   // { code: "28", name: "张家港" },

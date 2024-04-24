@@ -56,9 +56,12 @@ const provinces = [
   { code: "51", name: "呼和浩特市" },
   { code: "54", name: "南宁市" },
   { code: "74", name: "宁夏回族自治区" },
-  { code: "72", name: "黄石市" },
   { code: "77", name: "北京首都" },
   { code: "78", name: "河南省" },
+  { code: "79", name: "南京市" },
+  { code: "31", name: "中山市" },
+  { code: "39", name: "福泉市" },
+  { code: "25", name: "绍兴市" },
 ];
   
   
