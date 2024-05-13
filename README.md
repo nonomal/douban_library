@@ -1,6 +1,9 @@
 ﻿# 豆瓣+图书馆查询助手
 ### 浏览豆瓣网时自动查询图书信息，能轻松地找到所需的图书资源。通过这一插件，能够快速了解图书馆藏书情况，轻松获取所需的图书资料，提高了图书查询的效率和便捷性。正在逐步增加其它图书馆。
 
+
+### 同时支持两个图书馆查询接口 2024-5-13
+
 ### 安装方法：
 
 #### [Google Chrome ](https://chromewebstore.google.com/detail/%E8%B1%86%E7%93%A3+%E5%9B%BE%E4%B9%A6%E9%A6%86%E6%9F%A5%E8%AF%A2%E5%8A%A9%E6%89%8B/ikdabfmbodafpkjkhbookfbimcjgkdnl)
