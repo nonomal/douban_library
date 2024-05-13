@@ -7,29 +7,38 @@ function delete_div() {
 chrome.runtime.sendMessage(
   { action: "getProvinceStatus" },
   function (response) {
-    const selectcode = Object.keys(response.provinceStatus)[0];
-    const selectedProvince = provinces.find(
-      (province) => province.code === selectcode
-    );
-    selectname = selectedProvince.name;
+    const selectcode = Object.keys(response.provinceStatus);
+    var  selectedProvince=[];
+    for (let i = 0; i < selectcode.length; i++) {
+       selectedProvince[i] = provinces.find(
+        (province) => province.code === selectcode[i]
+      );
+    }
+    selectname = selectedProvince;
     let key = { code: response.provinceStatus };
-    console.log(key);
     const isbn = /\d{13}/.exec($("#info").html())[0];
     const bookRecnoUrl = "https://www.navy81.com/jilin";
     //const bookRecnoUrl = "http://127.0.0.1:8080/jilin";
     try {
-      initDivElement(selectname, "sk");
+      for (let i = 0; i < selectcode.length; i++) {
+        initDivElement(selectedProvince[i].name, "sk");
+      }
       $.post(
         bookRecnoUrl,
         JSON.stringify({ isbn: isbn, key }),
         function (responseData) {
-          if (responseData["msg"] === "nobook") {
-            delete_div();
-            initDivElement(selectname, "nk");
-          } else {
-            delete_div();
-            initDivElement(selectname, responseData);
+          for (let i = 0; i < selectcode.length; i++) {
+            delete_div()
           }
+          for (let i = 0; i < responseData.length; i++) {
+            try{
+              initDivElement(selectedProvince[i].name, responseData[i]);
+            }
+            catch(e){
+              initDivElement(selectedProvince[i].name, "nk");
+            }
+          }
+  
         }
       );
     } catch (error) {
@@ -84,6 +93,7 @@ function initDivElement(selectname, book) {
       const div2 = document.createElement("div");
       div2.style.width = "90px";
       div2.style.display = "inline-block";
+      div2.style.overflowWrap = "break-word";
       div2.textContent = item.callno;
 
       const div3 = document.createElement("div");
