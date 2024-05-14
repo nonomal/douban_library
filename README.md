@@ -19,7 +19,7 @@
 #### 关闭设置页面，插件将根据你的选择加载相应的省市图书馆信息。
 
 ### 插件功能截图
-![](https://github.com/wyj0605/douban_library/blob/main/img/Snipaste_2024-03-14_12-26-49.png?raw=true)
+![](https://github.com/wyj0605/douban_library/blob/main/img/2024-05-14_09-23-15.png?raw=true)
 
 ![](https://github.com/wyj0605/douban_library/blob/main/img/2024-4-24.png?raw=true)
 
